@@ -1,18 +1,18 @@
 
 import React from "react";
 import './../styles/App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import {BrowserRouter,Switch,Route} from "react-router-dom";
 import ItemList from "./ItemList";
-import ItemDetails from "./ItemDetails";
+import ItemDetail from "./ItemDetail";
 const App = () => {
   return (
     <div>
         <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ItemList/>}/>
-           <Route path="/items/:id" element={<ItemDetails/>}/>
+        <Switch>
+          <Route exact path="/" component={ItemList}/>
+           <Route exact path="/items/:id" component={ItemDetail}/>
 
-        </Routes>
+        </Switch>
         </BrowserRouter>
     </div>
   )

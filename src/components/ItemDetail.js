@@ -1,7 +1,7 @@
 import React from "react";
 import {useParams} from "react-router-dom";
 
-function ItemDetails(){
+function ItemDetail(){
 
     const items =[
         {
@@ -32,4 +32,4 @@ function ItemDetails(){
     );
 }
 
-export default ItemDetails;
+export default ItemDetail;
